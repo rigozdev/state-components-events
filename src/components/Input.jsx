@@ -1,6 +1,6 @@
-const Input = ({onChange, nombre, setNombre, nombrePlaceholder, typeInput, autoComplete, style}) => {
+const Input = ({ onChange, nombre, setNombre, nombrePlaceholder, typeInput, autoComplete, style }) => {
     return (
-        <input 
+        <input
             className={style}
             type={typeInput}
             name="name"

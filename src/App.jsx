@@ -22,7 +22,7 @@ const App = () => {
     if (nombre.trim() === "" || nombre.trim().length < 2) {
       return setError("Ingrese nombre válido");
     } else {
-      return setSuccess("Ingreso exitoso")
+      return setSuccess("Ingreso exitoso");
     }
 
   };
@@ -30,6 +30,9 @@ const App = () => {
   return (
 
     <>
+      <header className="header-container">
+        <h1 className="header-title"><b>Login</b></h1>
+      </header>
       {/* form */}
       <div className="general-container">
         <form onSubmit={handleSubmit}>

@@ -19,12 +19,13 @@ const App = () => {
     e.preventDefault();
     setError("");
     setSuccess("");
-    if (nombre.trim() === "" || nombre.trim().length < 2) {
+    if (nombre.trim() === "" || nombre.trim().length < 2) {      
+      return setError("Ingrese nombre válido");
+    } else if (nombre.trim() === "" || pass.trim() === "") {
       return setError("Ingrese nombre válido");
     } else {
       return setSuccess("Ingreso exitoso");
     }
-
   };
 
   return (
